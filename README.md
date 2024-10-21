@@ -34,4 +34,5 @@ below are the commands available in the tool:
     --password: Password used to derive the encryption key.
 
     Example:
+    
         go run main.go encrypt --filename input.txt --password 12345
