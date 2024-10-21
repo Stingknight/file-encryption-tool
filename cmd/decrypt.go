@@ -11,7 +11,6 @@ import (
 	"encoding/hex"
 	"fmt"
 	"io"
-	"io/ioutil"
 	"os"
 
 	"github.com/StingKnight/file-encryption-tool/helpers"
@@ -73,7 +72,7 @@ func Decrypt(source string, password []byte) error {
 		return err
 	}
 
-	ciphertext, err := ioutil.ReadFile(source)
+	ciphertext, err := os.ReadFile(source)
 	if err != nil {
 		return err
 	}
