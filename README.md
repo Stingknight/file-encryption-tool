@@ -16,22 +16,22 @@ below are the commands available in the tool:
 
 1. Encrypt a File
 
-go run main.go encrypt --filename <filepath> --password <password> --confirmpassword <conformpassword>
+    go run main.go encrypt --filename <filepath> --password <password> --confirmpassword <conformpassword>
 
---filename: Path to the file you want to encrypt.
---password: Password used to derive the encryption key.
---confirmpassword: Password to confim the above
+    --filename: Path to the file you want to encrypt.
+    --password: Password used to derive the encryption key.
+    --confirmpassword: Password to confim the above
 
-Example:
+    Example:
 
-go run main.go --filename input.txt --password 12345 --confirmpassword 12345
+        go run main.go --filename input.txt --password 12345 --confirmpassword 12345
 
 2. Decrypt a File
 
-go run main.go encrypt --filename <filepath> --password <password> 
+    go run main.go encrypt --filename <filepath> --password <password> 
 
---filename: Path to the file you want to encrypt.
---password: Password used to derive the encryption key.
+    --filename: Path to the file you want to encrypt.
+    --password: Password used to derive the encryption key.
 
-Example:
-go run main.go encrypt --filename input.txt --password 12345
+    Example:
+        go run main.go encrypt --filename input.txt --password 12345
